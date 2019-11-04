@@ -11,7 +11,7 @@ from Bio.Align import AlignInfo
 # Settings
 ambiguous_char = "X"
 out_filename = os.path.splitext(sys.argv[1])[0] + "_consensus.fasta"
-consensus_threshold = 0.6  # 0.5 = 50% of reads needed to call consensus
+consensus_threshold = 0.3  # 0.5 = 50% of reads needed to call consensus
 min_reads = 3  # minimum number of reads required to assign the presence of a base
 
 # read in alignments
