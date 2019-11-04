@@ -34,6 +34,8 @@ consensus_seq = consensus_seq.replace("-", "")
 # for SILVA - get back to DNA
 consensus_seq = consensus_seq.replace("U", "T")
 
+print("Consensus for " + sys.argv[1] + " is " + str(len(consensus_seq)) + " bases long")
+
 print("Writing file")
 
 # write out consensus
