@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 # Settings
 out_filename = os.path.splitext(sys.argv[1])[0] + "_id_filt.fasta"
-filter_threshold = sys.argv[3]  # 100 = 100%, not 1 = 100%
+filter_threshold = float(sys.argv[3])  # 100 = 100%, not 1 = 100%
 
 print("FASTA file read")
 
